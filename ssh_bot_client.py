@@ -23,7 +23,7 @@ class Client:
         return self.session.before
 
 def botnetCommand(command):
-    for client in botNet:
+    for client in clientlist:
         output = client.send_command(command)
         print ('[+] Output from ' + client.host)
         print ('[+] ' + output)
@@ -33,7 +33,7 @@ def addClient(host, user, password):
     clientlist.append(client)
 
 clientlist = []
-addClient('192.168.0.2', 'admin', 'admin')
+#addClient('192.168.0.2', 'admin', 'admin')
 addClient('192.168.0.6', 'msfadmin', 'msfadmin')
 botnetCommand('uname -a')
 botnetCommand('ping 127.0.0.1')
