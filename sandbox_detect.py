@@ -5,7 +5,7 @@ import random
 import time
 import sys
 
-user32 = cytpes.windll.user32
+user32 = ctypes.windll.user32
 kernel32 = ctypes.windll.kernel32
 
 keystrokes = 0
