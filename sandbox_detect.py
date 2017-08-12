@@ -68,6 +68,8 @@ def detect_sandbox():
     previous_timestamp = None
     detection_complete = False
 
+    last_input = get_last_input()
+
     if last_input >= max_input_threshold:
         sys.exit(0)
 
