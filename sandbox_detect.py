@@ -77,7 +77,7 @@ def detect_sandbox():
         keypress_time = get_key_press()
 
         if keypress_time is not None and previous_timestamp is not None:
-            elapsed = keypress_tiem - previous_timestamp
+            elapsed = keypress_time - previous_timestamp
 
             if elapsed <= double_click_threshold:
                 double_clicks += 1
