@@ -13,7 +13,7 @@ mouse_clicks = 0
 double_clicks = 0
 
 class LASTINPUTINFO(ctypes.Structure):
-    _fields = [("cbSize", ctypes.c_uint),
+    _fields_ = [("cbSize", ctypes.c_uint),
                ("dwTime", ctypes.c_ulong)
           ]
 
