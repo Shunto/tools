@@ -83,7 +83,7 @@ def detect_sandbox():
                 double_clicks += 1
 
                 if first_double_click is None:
-                    first_double_click = time.tiem()
+                    first_double_click = time.time()
                 else:
                     if double_clicks == max_double_clicks:
                         if keypress_time - first_double_click <= (max_double_clicks * double_click_threshold):
